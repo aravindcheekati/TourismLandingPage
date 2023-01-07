@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sitename {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.toggle-btn {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle-btn-bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.mobile-nav {
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+    display: none;
+    z-index: 1;
+}
+
+.nav-menu {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.list-items {
+    cursor: pointer;
+    margin: 10px 0px;
+    color: #fff;
+}
+
+.list-items:hover{
+    color: rgb(109, 102, 102);
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+}
+
+.lg-nav-list {
+    list-style: none;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lg-list-items {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.lg-list-items a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px
+}
+
+.lg-list-items:hover {
+    border-bottom: 5px solid #fff;
+}
+
+.header-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-heading {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.get-started-btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+
+.service-section {
+    width: 100%;
+    height: 50vh;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.service-card-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 32%;
+    height: 300px;
+    border: 1px solid #c0c0c0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.contact-container {
+    width: 100%;
+    height: 50vh;
+}
+
+.contact-inner-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    height: 40vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    margin: 10px 0px;
+}
+
+.contact-form input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c0c0c0;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-form textarea {
+    margin: 10px 0px;
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-form button{
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: rgb(77, 73, 73);
+    width: 100%;
+    height: 80px;
+}
+
+.inner-footer {
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-footer p {
+    color: #fff;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .lg-nav-list {
+        display: none;
+    }
+
+    .header-heading {
+        font-size: 28px;
+        margin: 25px;
+    }
+    .service-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .card {
+        width: 100%;
+        margin: 8px 0px;
+        padding: 10px;
+    }
+
+    .contact-card {
+        padding: 10px;
+    }
+
+    .inner-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .inner-footer p {
+        margin: 5px 0px;
+    }
+}
